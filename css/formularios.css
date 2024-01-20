@@ -1,0 +1,348 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  background-image: url(https://www.turbosite.com.br/images/background.svg);
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+html {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/starfield_stock_1.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-bar {
+  background-color: #ffffff;
+  width: 100%;
+  height: 15vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  user-select: none;
+}
+
+.nav-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn a {
+  background-color: #575757;
+  color: #ffffff;
+  width: 30%;
+  padding: 15px;
+  border: 2px solid #2c1fe4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.46);
+  transition: 0.3s;
+}
+
+.btn a:hover {
+  background-color: #00b7ff;
+  color: #ffffff;
+  box-shadow: 1px 1px 15px -4px rgba(219, 64, 64, 0.66);
+}
+
+/*deixando responsivo no mobile*/
+
+@media screen and (max-width: 928px) {
+  /*formulario*/
+  .flex {
+    display: flex;
+    min-width: 100%;
+    width: 100%;
+  }
+  .form {
+    display: flex;
+
+    min-width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+  }
+
+  /*banner*/
+  .nav-bar {
+    max-width: 100%;
+  }
+  /*body*/
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /*rodape*/
+  }
+  #redessociais {
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .pp {
+    font-size: 60%;
+    text-align: center;
+  }
+  .footer {
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+p {
+  text-align: center;
+}
+
+.flex-items {
+  background-color: #ff0000;
+  width: 60px;
+  height: 60px;
+  margin: 1%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+
+  position: absolute;
+  z-index: 0;
+  top: 95%;
+  right: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  height: 100px;
+}
+.generica {
+  background-color: red;
+  z-index: 99;
+}
+.nav-bar {
+  margin-top: 0px;
+}
+
+.form {
+  width: fit-content;
+  user-select: none;
+  position: relative;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 70px;
+  padding-bottom: 50px;
+
+  color: rgb(3, 3, 56);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+header {
+  text-align: center;
+  font-size: 2.7em;
+
+  color: rgb(3, 3, 56);
+}
+
+.input {
+  min-width: 280px;
+  border-radius: 18px;
+  border: 2.5px #2a08a8 solid;
+  padding: 5px;
+  margin: 0px 0px 12px -5px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.input label {
+  padding-top: 10px;
+  font-size: medium;
+}
+
+.input input {
+  text-align: center;
+  width: 98%;
+  border: none;
+  outline: none;
+  transform: translateY(-10%);
+  color: rgb(3, 3, 56);
+  font-size: 11pt;
+}
+
+.submit {
+  margin-top: 8%;
+  width: 100%;
+  text-align: center;
+}
+
+.submit button {
+  background: linear-gradient(-45deg, #4169e1, #1e90ff, #87cefa);
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 1.2em;
+  color: #ffff;
+  border-radius: 20px;
+  outline: none;
+}
+
+#inferior {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#inferior #esqueceuasenha,
+#inferior #criarconta {
+  margin-right: 12px;
+}
+
+.input img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 50.5%;
+  right: 75px;
+  left: 0px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 100%;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+}
+
+.third {
+  border-color: #3498db;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 15%;
+}
+
+.third:hover {
+  box-shadow: 0 0 5px 0 #1500ff inset, 0 0 5px 2px #ffffff;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+p a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+::selection {
+  background: black;
+}
+#redessociais {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+
+  margin: 50px;
+}

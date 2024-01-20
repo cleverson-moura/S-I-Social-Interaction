@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+
+:root {
+  --black1: #2b2f33;
+  --textwhite: #f1e4e4;
+  --blue: rgb(28, 111, 175);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  width: 100vw;
+  background: var(--black1);
+  font-family: "Monda", sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  background: var(--black1);
+  list-style: none;
+  padding: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--textwhite);
+}
+
+.menu ul #cadastrar-se {
+  border: 1px solid var(--textwhite);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.menu img {
+  height: 100px;
+  margin: 7px;
+}
+
+.menu img:hover {
+  filter: brightness(150%);
+}
+
+@media (max-width: 475px) {
+  .menu {
+    display: block;
+    font-size: small;
+  }
+  .menu ul {
+    justify-content: center;
+  }
+  .menu #image {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main {
+  font-family: "Monda", sans-serif;
+  background: var(--black1);
+  text-align: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h1:hover {
+  animation: blink 3s infinite;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+.main .content {
+  color: var(--textwhite);
+  margin-top: -70px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.wrapper a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: var(--textwhite);
+  border: 2px solid var(--textwhite);
+  border-radius: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.wrapper a span {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper a:after {
+  border-radius: 20px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--blue);
+  transition: all 0.35s;
+}
+
+.wrapper a:hover {
+  color: var(--textwhite);
+}
+
+.wrapper a:hover:after {
+  width: 100%;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--black1);
+  position: fixed;
+}
+
+footer p {
+  color: var(--textwhite);
+  font-family: "Courier";
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+footer p:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+footer p a {
+  color: var(--textwhite);
+  text-decoration: none;
+}
+
+footer span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .main {
+    align-items: start;
+  }
+  .main .content {
+    margin-top: 30px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+}
+
+@media (max-height: 550px) {
+  html,
+  body {
+    overflow: scroll;
+  }
+
+  footer {
+    position: relative;
+  }
+}

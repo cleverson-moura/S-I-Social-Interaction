@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:image" content="logo.png" />
+    <link rel="icon" href="imgs/S&I logotipo.png" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <title>S&I Login</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <img src="imgs/banner s&i.png" float="left" />
+    </header>
+
+    <div class="flex">
+      <div class="form">
+        <header id="title">Fazer Login</header>
+        <form action="" method="get">
+          <label for="email" id="email">Email</label>
+          <div class="input">
+            <input type="email" name="email" id="email" required />
+          </div>
+          <label for="senha">Senha</label>
+          <div class="input">
+            <input
+              id="senha"
+              class="senha"
+              name="senha"
+              type="password"
+              required
+            />
+            <img src="imgs/visualizar.png" class="btn" alt="" />
+          </div>
+          <div class="submit">
+            <button class="btn third">Enviar</button>
+          </div>
+          <div id="inferior">
+            <div id="esqueceuasenha">
+              Esqueceu a
+              <a
+                href="esqueceu-a-senha.html"
+                style="color: #007bff"
+                style="text-decoration: none"
+                >senha?</a
+              >
+            </div>
+            <div id="criarconta">
+              Não tem conta?
+              <a
+                href="criar-conta.html"
+                style="color: #007bff"
+                style="text-decoration: none"
+                >Criar</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <div class="conteudo">
+    <div class="espaco-extra"></div>
+  </div>
+  <footer class="footer">
+    <div id="redessociais" align="center">
+      <p class="pp">Social & Interaction - Interação Social</p>
+      <p class="pp">
+        created by:
+        <a href="#"> ©2022 S&I</a>
+        <span>|</span>
+      </p>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+</html>

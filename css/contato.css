@@ -1,0 +1,261 @@
+body {
+  background-color: #ffffff;
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#name,
+#email,
+#message {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: rgb(0, 62, 248);
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    rgb(0, 225, 255),
+    rgb(0, 123, 255) 50%,
+    rgb(30, 0, 255) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+a:hover {
+  background-position: 0 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(13) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+  border-right: 5px solid rgb(0, 0, 0);
+}
+.nav-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: "Montserrat", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #0099ffad;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #006eff;
+  max-width: 768px;
+  margin: 60px auto;
+  max-width: 700px;
+  max-height: 600px;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #00aeff;
+  font-size: 32px;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 1px -1px 0 #2f5d87, 1px -1px 0 #2e5a83, 2px -2px 0 #2d5880;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #474544;
+}
+
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #474544;
+}
+
+#form_button {
+  border: #1500ff;
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #1291ecda;
+  color: #f2f3eb;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 928px) {
+  body {
+    padding: 10px;
+  }
+  form {
+    min-width: 80%;
+    min-height: 200%;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 100%;
+  }
+}
+.submit {
+  float: right;
+}

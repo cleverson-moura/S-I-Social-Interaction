@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.widget-chat {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.widget-container {
+  position: relative;
+}
+
+.widget-button {
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(18, 169, 203) 11.2%,
+    rgb(64, 46, 230) 91.2%
+  );
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-open {
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.close-chat {
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+  display: none;
+  -webkit-animation: close-chat 1.9s ease-in-out both;
+  animation: close-chat 1.9s ease-in-out both;
+}
+
+.widget-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  width: 300px;
+  height: clamp(300px, 70vh, 445px);
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+}
+
+.widget-title {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(18, 169, 203) 11.2%,
+    rgba(64, 46, 230) 91.2%
+  );
+}
+
+.widget-title span,
+strong {
+  color: #fff;
+  display: block;
+}
+
+.widget-title figure {
+  margin: 0 15px 0 0;
+}
+
+.widget-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 5px solid #fff;
+}
+
+.play-chat {
+  padding: 4px;
+  border-radius: 5px;
+  background: #f5f5f5;
+  color: #bdbcbc;
+  margin: 0 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.widget-container-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 75%;
+}
+
+.interaction-container {
+  padding: 0 15px;
+  height: 76%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #e98973 #9c27b0;
+}
+
+.interaction-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.interaction-container::-webkit-scrollbar-track {
+  background: #e7d4c0;
+  border-radius: 0;
+}
+
+.interaction-container::-webkit-scrollbar-thumb {
+  background-color: #9c27b0;
+  border-radius: 0;
+}
+
+.interaction {
+  margin: 15px 0;
+}
+
+.interaction.client {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.interaction.client .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #ccc;
+  margin-left: 5px;
+}
+
+.interaction.client p {
+  background: #ccc;
+  color: #000;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+.interaction.agent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.interaction.agent .photo figure {
+  margin: 0;
+}
+
+.interaction.agent p {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(18, 169, 203) 11.2%,
+    rgba(64, 46, 230) 91.2%
+  );
+  color: #fff;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.send-message svg {
+  fill: #555;
+}
+
+.send-message-input {
+  width: 225px;
+  height: 35px;
+  padding: 0 15px;
+  border-radius: 35px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.send-message-input:focus {
+  outline: none;
+  background: #f9f9f9;
+}
+
+.widget-input-open {
+  display: none;
+}
+
+.widget-input-open:checked ~ .widget-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.widget-input-open:checked + .widget-button .chat-open {
+  display: none;
+}
+
+.widget-input-open:checked + .widget-button .close-chat {
+  display: block;
+}
+
+/* animacao close */
+@-webkit-keyframes close-chat {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes close-chat {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
