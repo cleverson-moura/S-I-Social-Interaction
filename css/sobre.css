@@ -47,14 +47,20 @@ body::-webkit-scrollbar {
 .main .perfil {
   color: var(--textwhite);
   background: var(--black2);
+  max-width: 470px;
   margin: 20px;
   padding: 10px;
-  width: 50%;
-  display: flex;
   border-radius: 5px;
-  align-items: baseline;
-  justify-content: space-between;
   transition: 0.5s ease-in-out;
+}
+
+.main .perfil .content {
+  align-self: center;
+  margin-left: 20px;
+}
+
+.main .perfil .oculto {
+  display: none;
 }
 
 .main .perfil:hover {
@@ -67,20 +73,35 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: baseline;
   gap: 15px;
-  margin-right: 10px;
+  width: 100%;
   font-size: 2em;
 }
 
 .main .perfil .infor .foto {
   height: 200px;
-  width: 200px;
+  width: 200px;  
+  border-radius: 5px;
+}
+
+.main .perfil .infor .links a{
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1350px) {
+  .main .perfil {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 655px) {
   .main .perfil {
+    margin-top: 50px;
     flex-direction: column;
-    max-width: 120px;
+    max-width: 220px;
   }
+
 
   .main .perfil .infor {
     align-items: center;
